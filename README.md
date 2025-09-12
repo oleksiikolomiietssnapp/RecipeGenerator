@@ -2,10 +2,6 @@
 
 An iOS application built with SwiftUI that uses a local AI model to generate personalized recipes from a list of ingredients.
 
-## 🎬 Demo
-
-*A video showcasing the app in action will be added here soon.*
-
 ## 🌟 Features
 
 *   **AI-Powered Recipes:** Enter the ingredients you have, and the app will generate a complete recipe for you.
@@ -59,3 +55,7 @@ This application uses Apple's on-device `FoundationModels` for AI capabilities. 
 1.  Open `RecipeGenerator.xcodeproj` in Xcode.
 2.  Select an iOS simulator or a connected device that meets the requirements above.
 3.  Build and run the project (Cmd+R).
+
+## 🎬 Demo
+
+https://github.com/user-attachments/assets/482dae8d-0c6e-418e-8742-386a819f8063
