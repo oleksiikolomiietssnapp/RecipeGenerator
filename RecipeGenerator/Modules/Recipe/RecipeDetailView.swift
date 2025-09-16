@@ -63,15 +63,16 @@ struct RecipeDetailView: View {
                 .offset(y: appearAnimation ? 0 : 20)
                 .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(sectionDelay + 0.3), value: appearAnimation)
 
-                HStack {
-                    Image(systemName: "clock")
-                        .foregroundColor(.orange)
-                    Text("Time to cook: \(DateComponentsFormatter.cookingDuration.string(from: recipe.totalDuration) ?? "--")")
-                }
-                .font(.headline)
-                .opacity(appearAnimation ? 1 : 0)
-                .offset(y: appearAnimation ? 0 : 20)
-                .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(sectionDelay + 0.3), value: appearAnimation)
+                // TODO: "What is the cooking time?"
+//                HStack {
+//                    Image(systemName: "clock")
+//                        .foregroundColor(.orange)
+//                    Text("Time to cook: \(DateComponentsFormatter.cookingDuration.string(from: recipe.totalDuration) ?? "--")")
+//                }
+//                .font(.headline)
+//                .opacity(appearAnimation ? 1 : 0)
+//                .offset(y: appearAnimation ? 0 : 20)
+//                .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(sectionDelay + 0.3), value: appearAnimation)
 
             }
 
@@ -237,7 +238,7 @@ struct RecipeDetailView_Previews: PreviewProvider {
         NavigationView {
             RecipeDetailView(
                 recipe: Recipe(
-                    title: "Grilled Chicken Salad With Onions And Cucmber",
+                    title: "Grilled Chicken Salad With Onions And Cucumber",
                     energy: 320.5,
                     protein: 28.3,
                     carbs: 12.7,
@@ -249,8 +250,7 @@ struct RecipeDetailView_Previews: PreviewProvider {
                     ingredients:
                         "Grilled chicken breast, Mixed greens, Cherry tomatoes, Cucumber, Red onion, Olive oil, Balsamic vinegar, Salt, Black pepper",
                     steps:
-                        "Season chicken breast with salt and pepper. Grill chicken for 6-8 minutes per side until cooked through. Let chicken rest for 5 minutes, then slice. Wash and chop all vegetables. Combine vegetables in a large bowl. Top with sliced chicken. Drizzle with olive oil and balsamic vinegar. Toss gently and serve immediately",
-                    totalDuration: 4260
+                        "Season chicken breast with salt and pepper. Grill chicken for 6-8 minutes per side until cooked through. Let chicken rest for 5 minutes, then slice. Wash and chop all vegetables. Combine vegetables in a large bowl. Top with sliced chicken. Drizzle with olive oil and balsamic vinegar. Toss gently and serve immediately"
                 )
             )
         }

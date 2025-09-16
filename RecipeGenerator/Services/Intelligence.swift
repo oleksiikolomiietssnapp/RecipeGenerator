@@ -1,3 +1,4 @@
+import Foundation
 import FoundationModels
 
 struct Intelligence {
@@ -35,19 +36,13 @@ struct Intelligence {
         """
     }
 
-    public func generate(_ input: String) async throws -> String {
-        guard SystemLanguageModel.default.isAvailable else {
-            return input
+    func generateRecipe(with ingredients: String) async throws -> Recipe {
+        if case .unavailable(let reason) = SystemLanguageModel.default.availability {
+            throw IntelligenceError.modelUnavailable(reason)
         }
 
-        let session = LanguageModelSession()
-
-        let response = try await session.respond(to: input)
-        return response.content
-    }
-
-    func generateRecipe(with ingredients: String) async throws -> Recipe {
         let session = LanguageModelSession(instructions: recipeInstructions)
+
         let recipe = try await session.respond(to: recipePrompt(with: ingredients), generating: Recipe.self)
         return recipe.content
     }

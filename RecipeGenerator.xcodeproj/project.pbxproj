@@ -6,11 +6,27 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		5387951E2E786B380016EDAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53948C142E60544600A9D58E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53948C1B2E60544600A9D58E;
+			remoteInfo = RecipeGenerator;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		5387951A2E786B380016EDAB /* RecipeGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53948C1C2E60544600A9D58E /* RecipeGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		5387951B2E786B380016EDAB /* RecipeGeneratorTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = RecipeGeneratorTests;
+			sourceTree = "<group>";
+		};
 		53948C1E2E60544600A9D58E /* RecipeGenerator */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = RecipeGenerator;
@@ -19,6 +35,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		538795172E786B380016EDAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		53948C192E60544600A9D58E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				53948C1E2E60544600A9D58E /* RecipeGenerator */,
+				5387951B2E786B380016EDAB /* RecipeGeneratorTests */,
 				53948C1D2E60544600A9D58E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				53948C1C2E60544600A9D58E /* RecipeGenerator.app */,
+				5387951A2E786B380016EDAB /* RecipeGeneratorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,6 +73,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		538795192E786B380016EDAB /* RecipeGeneratorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 538795202E786B380016EDAB /* Build configuration list for PBXNativeTarget "RecipeGeneratorTests" */;
+			buildPhases = (
+				538795162E786B380016EDAB /* Sources */,
+				538795172E786B380016EDAB /* Frameworks */,
+				538795182E786B380016EDAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5387951F2E786B380016EDAB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				5387951B2E786B380016EDAB /* RecipeGeneratorTests */,
+			);
+			name = RecipeGeneratorTests;
+			packageProductDependencies = (
+			);
+			productName = RecipeGeneratorTests;
+			productReference = 5387951A2E786B380016EDAB /* RecipeGeneratorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		53948C1B2E60544600A9D58E /* RecipeGenerator */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53948C272E60544700A9D58E /* Build configuration list for PBXNativeTarget "RecipeGenerator" */;
@@ -80,6 +128,10 @@
 				LastSwiftUpdateCheck = 2600;
 				LastUpgradeCheck = 2600;
 				TargetAttributes = {
+					538795192E786B380016EDAB = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = 53948C1B2E60544600A9D58E;
+					};
 					53948C1B2E60544600A9D58E = {
 						CreatedOnToolsVersion = 26.0;
 					};
@@ -100,11 +152,19 @@
 			projectRoot = "";
 			targets = (
 				53948C1B2E60544600A9D58E /* RecipeGenerator */,
+				538795192E786B380016EDAB /* RecipeGeneratorTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		538795182E786B380016EDAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		53948C1A2E60544600A9D58E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +175,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		538795162E786B380016EDAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		53948C182E60544600A9D58E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,7 +191,62 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		5387951F2E786B380016EDAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53948C1B2E60544600A9D58E /* RecipeGenerator */;
+			targetProxy = 5387951E2E786B380016EDAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		538795212E786B380016EDAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44H75889S4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.snappmobile.RecipeGeneratorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecipeGenerator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RecipeGenerator";
+			};
+			name = Debug;
+		};
+		538795222E786B380016EDAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44H75889S4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.snappmobile.RecipeGeneratorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecipeGenerator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RecipeGenerator";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		53948C252E60544700A9D58E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -334,6 +456,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		538795202E786B380016EDAB /* Build configuration list for PBXNativeTarget "RecipeGeneratorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				538795212E786B380016EDAB /* Debug */,
+				538795222E786B380016EDAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		53948C172E60544600A9D58E /* Build configuration list for PBXProject "RecipeGenerator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

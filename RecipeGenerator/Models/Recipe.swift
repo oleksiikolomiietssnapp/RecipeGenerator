@@ -1,3 +1,4 @@
+import Foundation
 import FoundationModels
 
 @Generable
@@ -37,7 +38,4 @@ struct Recipe: Equatable {
             "Cooking instructions written as plain sentences, separated by periods, without step numbers. Add time to cook to each instruction and a total time at the end."
     )
     let steps: String?
-
-    @Guide(description: "Total preparation and cooking duration based on the proposed(generated) steps, in seconds.")
-    let totalDuration: Double
 }
