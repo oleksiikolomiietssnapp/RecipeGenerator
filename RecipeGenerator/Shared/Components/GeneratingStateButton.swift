@@ -13,7 +13,7 @@ struct GeneratingStateButton: View {
                 }
                 Task {
                     do {
-                        let recipe = try await Intelligence().generateRecipe(with: text)
+                        let recipe: Recipe = try await Intelligence().generate(.recipe, using: .ingredients(text))
                         await MainActor.run {
                             withAnimation(.spring()) {
                                 generatingState = .generated(recipe)
